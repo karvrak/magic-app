@@ -1,26 +1,28 @@
-import {  Link } from "react-router-dom";
 import React, {FunctionComponent} from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 type CardProps = {
-    nb: any
+    id: number
 }
 
-export const CardOverview: FunctionComponent<CardProps> = ({ nb }) => 
+export const CardElement: FunctionComponent<CardProps> = ({ id }) => 
+    
     <Grid container spacing = {6}>
         <Grid item xs={8}>
                 <Box sx={{bgcolor: '#1eee11', height: '80vh'}}>                        
-                    <h3>AFFICHAGE DES CARTES {nb }</h3>
+                    <img src={"/imgs/"+id+".png"} alt={"/imgs/"+id+".png"}></img>
                 </Box>
         </Grid>
         <Grid item xs={4}>
                 <Box sx={{bgcolor: '#1eee11', height: '80vh'}}>       
-                    <h3>ZONE COMMENTAIRE de la carte {nb}</h3>
+                    <h3>ZONE COMMENTAIRE de la carte {id}</h3>
                 </Box>
         </Grid>
     </Grid>
 
 
+
+
    
 
-  export default CardOverview;
+  export default CardElement;

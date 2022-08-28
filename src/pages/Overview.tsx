@@ -1,17 +1,14 @@
-import {  Link, useParams } from "react-router-dom";
-import Grid from '@mui/material/Grid'
+import {useParams } from "react-router-dom";
 import CardElement from '../component/CardElement';
-import { createLanguageService } from "typescript";
 
-function Overview() {
-    const itemId = useParams();
-    
-    
+export function Overview() {
+    let itemId  = useParams();
+    var r: number = +itemId.id !
+    console.log(r)
     return (
         
-          <CardElement nb={itemId.id}></CardElement>  
+          <CardElement id={r}></CardElement>  
         
     );
   }
 
-  export default Overview;

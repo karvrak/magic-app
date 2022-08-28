@@ -1,10 +1,10 @@
 import {  Link } from "react-router-dom";
 
-export function About() {
+export function AddItems() {
     return (
       <>
         <main>
-        <p>About page.</p>
+        <p>AddItems page.</p>
         </main>
         <nav>
 

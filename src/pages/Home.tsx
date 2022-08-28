@@ -1,6 +1,6 @@
 import {  Link } from "react-router-dom";
 
-function Home() {
+export function Home() {
     return (
       <>
         <main>
@@ -8,10 +8,10 @@ function Home() {
         </main>
         <nav>
           <Link to="/about">About</Link><br/>
-          <Link to="/Browse">Browse</Link>
+          <Link to="/Browse">Browse</Link><br/>
+          <Link to="/add-items">AddItems</Link><br/>
+          <Link to="/Overview/1">ov/1</Link>
         </nav>
       </>
     );
   }
-
-  export default Home;
